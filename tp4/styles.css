@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
+*{
+    font-family: Montserrat;
+}
+body{
+    background: linear-gradient(to right, #42566A, #E0CFBA);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title {
+    background-color: #dddddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0,0.6);
+    text-align: center;
+    width: 50%;
+  }
+
+  /* Style for the title */
+  .title h2 {
+    color: #42566A;
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  /* Style for the paragraph */
+  .title p {
+    color: #666666;
+    font-size: 19px;
+    line-height: 1.5;
+  }
+
+  .title a{
+    font-size: 25px;
+    margin-bottom: 20px;
+  }

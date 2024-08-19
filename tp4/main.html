@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles_main.css">
+    <link rel="icon" href="x-icon.ico" type="image/x-icon">
+
+    <title>Document</title>
+</head>
+<body>
+    <a href="index.html" class="back">Back to the main page</a>
+    <div class="tablecontainer">
+        <table id="productTable">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <select id="Product1">
+                            <option name="product1" value="100">Product1 / PU = 100DA</option>
+                            <option name="Product2" value="200">Product2 / PU = 200DA</option>
+                            <option name="product3" value="300">Product3 / PU = 300DA</option>
+                            <option name="Product4" value="400">Product4 / PU = 400DA</option>
+                            <option name="product5" value="500">Product5 / PU = 500DA</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input value="0" min="0" type="number" id="number1" >
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <select id="Product2">
+                            <option name="product1" value="100">Product1 / PU = 100DA</option>
+                            <option name="Product2" value="200">Product2 / PU = 200DA</option>
+                            <option name="product3" value="300">Product3 / PU = 300DA</option>
+                            <option name="Product4" value="400">Product4 / PU = 400DA</option>
+                            <option name="product5" value="500">Product5 / PU = 500DA</option>
+                            </select>
+                    </td>
+                    <td>
+                        <input value="0" min="0" type="number" id="number2">
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <select id="Product3">
+                            <option name="product1" value="100">Product1 / PU = 100DA</option>
+                            <option name="Product2" value="200">Product2 / PU = 200DA</option>
+                            <option name="product3" value="300">Product3 / PU = 300DA</option>
+                            <option name="Product4" value="400">Product4 / PU = 400DA</option>
+                            <option name="product5" value="500">Product5 / PU = 500DA</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input value="0" min="0" type="number" id="number3" >
+                    </td>
+                    
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+</div>
+
+<form action="#result">
+    <label class="strong">Taxe exoneration (19%) :</label>
+    <input type="checkbox" id="taxExemptionCheckbox">
+    <div class="reduction">
+        <label class="strong" for="none">Reduction :</label>
+        <input checked type="radio" name="reduction_option" id="none" value="0">
+        <label for="none">None</label>
+        <input type="radio" name="reduction_option" id="five_percent" value="5">
+        <label for="five_percent">5%</label>
+        <input type="radio" name="reduction_option" id="fifteen_percent" value="15">
+        <label for="fifteen_percent">15%</label>
+    </div>    
+</form>
+<button onclick="calculateResult()">Preview</button>
+
+<section id="result">
+    <div class="tablecontainer">
+        <table id="result-table">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>unitPrice</th>
+                    <th>Amount(DA)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Table rows here -->
+            </tbody>
+        </table>
+    </div>
+    <a href="main.html" id="other">Other Order Entry</a>
+</section>
+    <script src="script.js" defer></script>
+</body>
+</html>

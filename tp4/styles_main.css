@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
+body{
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+    background: linear-gradient(to right, #42566A, #E0CFBA);
+    padding-bottom: 200px;
+}
+a.back{
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    text-decoration:  none;
+    font-size: 18px;
+    background-color: #ddd;
+    padding: 5px;
+    border-radius: 5px;
+    color: black;
+    transition: all 0.3s ease;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0,0.6);
+}
+a.back:hover{
+    box-shadow: 0px 10px 15px rgba(0, 0, 0);
+    background-color: #42566A;
+    color: white;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10em;
+}
+*{
+    font-family: Montserrat, sans-serif;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    
+}
+th {
+    background-color: #42566A;
+    font-weight: bold;
+}
+.tablecontainer{
+    width: 50%;;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0,0.6);
+    border-radius: 8px;
+    min-width: 500px;
+    display: inline-block;
+}
+tbody{
+    border-radius:8px ;
+}
+
+form{
+    margin-top: 20px;
+    font-size: 20px;
+    width: 50%;
+    padding: 10px;
+    min-width: 500px;
+}
+input , select{
+    font-size: 16px;
+    border-radius: 5px;
+    
+}
+.strong{
+    font-weight: 600;
+}
+button{
+    margin-top: 20px;
+    background-color: #ddd;
+    font-size: 20px;
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
+    border: solid  rgb(100, 100, 100) 0.5px ;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0,0.2);
+}
+button:hover{
+    box-shadow: 0px 10px 15px rgba(0, 0, 0,0.5);
+    background-color: #42566A;
+    color: #ddd;
+}
+section{
+    
+    justify-self:end;
+    width: 100%;
+    align-items: center;
+}
+#result{
+    margin-top: 600px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 00px;
+}
+#other{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border: #303030 solid 1px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0,0.2);
+    background-color: #ddd;
+}
+#other:hover{
+    box-shadow: 0px 10px 15px rgba(0, 0, 0,0.5);
+    background-color: #42566A;
+    color: #ddd;
+}
